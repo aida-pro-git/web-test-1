@@ -21,45 +21,69 @@
 .navbar ul
 {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+.navbar ul li:hover > a{
+    background-color: hsl(0, 23%, 52%);
+}
+
+.menu .navbar > ul > li
+{
+    float: right;
 }
 .menu .navbar ul li ul
 {
     visibility: hidden;
     position: absolute;
 }
-.menu .navbar ul li :hover>ul
+.menu .navbar ul li:hover>ul
 {
     visibility: visible;
+    box-sizing: border-box;
+    border-top: rgba(130, 0, 0, 0.288) solid;
+    box-shadow: black;
+
 }
-
-
-.menu .navbar > ul > li
-{
-    float: right;
-}
-
-
 
 .part
 {
-    padding-right: 10px;
-    float: right;
+    
     text-decoration: none;
     display:block;
     line-height: normal;
+    background-color: rgb(189, 135, 135);
+    padding: 0 25px;
+    width: 100px;
+    color: black;
+   
 }
 .part:hover
 {
-  background-color: rgb(201, 201, 230);
+  background-color: rgb(230, 201, 201);
 }
 #logo
 {
     display: inline;
 }
+.search .search-box button:hover 
+        {
+              background-color:rgb(223, 222, 222);
+              border-style: outset;
+        }
 
+.search .search-box button:active 
+        {
+              background-color:rgb(128, 128, 128);
+              border-style: outset;
+        }
 .menu
 {
     padding-top:70px ;
-    background-color: rgb(84, 167, 139);
+    background-color: rgb(167, 84, 84);
     position: relative;
+    box-sizing: border-box;
+    border-bottom: rgba(76, 0, 130, 0.288) solid;
 }
+
